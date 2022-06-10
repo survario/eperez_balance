@@ -43,6 +43,11 @@ node index.js fork 8080
 Revisar nginx.conf
 
 *Al levantar los servidores con forever, funciona sin problemas, pero cada puerto debe ser levantado en un terminal distinto.
+forever index.js fork 8082
+forever index.js fork 8083
+forever index.js fork 8084
+forever index.js fork 8085
+
 *Al intentarlo con pm2 (como en el after class) me da el siguiente error.
 Ejecutando:
 pm2 start index.js --name="server8082" --watch -- fork 8082
@@ -51,3 +56,5 @@ Resultado:
 [PM2] Done.
 [PM2] Applying action restartProcessId on app [8083](ids: [ '8082' ])
 [PM2][ERROR] Process 8082 not found
+
+*obteniendo el mismo resultado con los 4 puertos
