@@ -1,6 +1,12 @@
 Emmanuel Perez - Desafío Servidor con Balance de Carga
 -------------------------------------------------------------
 
+El archivo comandos.txt contiene los comandos requeridos para este Desafío
+
+En el directorio de NGINX, se debe reemplazar el archivo nginx.conf, por el archivo del mismo nombre, incluído en este proyecto, en la carpeta raíz.
+
+En el mismo archivo nginx.conf, en la línea 54, se debe actualizar root, por la ruta correspondiente que dirija desde el directorio de NGINX hasta la carpeta public del proyecto, según corresponda.
+
 Antes de ejecutar la aplicación, 
 
 1. Levantar un servidor local mongoDB en una carpeta a elección (o utilizar una base online).
@@ -10,11 +16,6 @@ Antes de ejecutar la aplicación,
 3. Ingrese en la terminal, ubicado en el directorio del proyecto, el comando:
 
 - npm start
-
-Si desea ingresar por terminal un número de puerto personalizado (mediante minimist), ingrese:
-
-- npm start -p <PORT>
-
 
 A través del navegador, acceder a las rutas (reemplace <PORT> por el número de Puerto utilizado (por defecto 8080)):
 
@@ -60,6 +61,8 @@ Dependencias utilizadas:
     faker,
 
     mongoose,
+
+    nodemon,
 
     normalizr,
     
